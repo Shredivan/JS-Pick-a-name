@@ -10,6 +10,12 @@ body{
     width: 960px;
     margin: 10px auto;
 }
+h1{
+    margin: 20px 0;
+}
+h3{
+    margin: 10px 0;
+}
 input{
     min-width: 300px;
     height: 30px;
@@ -24,15 +30,25 @@ button{
     border: none;
     font-size: 1em;
 }
+button:hover{
+    cursor: pointer;
+}
 .addToList{
     background-color: white;
     border: 1px solid black;
+}
+.addToList:hover{
+    background-color: #f9f9f9;
 }
 .submit{
     background-color: black;
     color: white;
     display: block;
     margin-top: 16px;
+}
+.submit:hover{
+    box-shadow: 0px 1px 6px #a9a9a9;
+    transition: .13s;
 }
 ul{
     margin-top: 16px;

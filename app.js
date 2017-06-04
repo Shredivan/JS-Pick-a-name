@@ -1,5 +1,6 @@
 let input = document.querySelector('input');
 let addToList = document.querySelector('button.addToList');
+let submitRandom = document.querySelector('button.submit');
 
 /*
     Empty array to hold values of input field
@@ -7,7 +8,6 @@ let addToList = document.querySelector('button.addToList');
 */
 
 let randomList = [];
-
 
 //Function to take data from input form and add to list
 addToList.addEventListener('click', () =>{
@@ -29,3 +29,13 @@ addToList.addEventListener('click', () =>{
     // Empty the array after a value is entered
     input.value = '';
 })
+
+/*
+let testData = ['Dave', 'Senan', 'Sorcha', 'Ste'];
+function random(data){
+    let answer = Math.floor(Math,random(data.length));
+    console.log(data);
+}
+
+random(testData);
+*/
