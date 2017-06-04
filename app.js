@@ -15,6 +15,7 @@ addToList.addEventListener('click', () =>{
     let li = document.createElement('li');
 
     // Take input values and add as a list item to DOM
+    //TODO: Create conditional statement that blocks input if user submits an integer or float
     li.textContent = input.value;
     ul.appendChild(li);
 
