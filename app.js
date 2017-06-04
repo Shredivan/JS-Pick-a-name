@@ -30,12 +30,11 @@ addToList.addEventListener('click', () =>{
     input.value = '';
 })
 
-/*
+
 let testData = ['Dave', 'Senan', 'Sorcha', 'Ste'];
 function random(data){
-    let answer = Math.floor(Math,random(data.length));
-    console.log(data);
+    let random = Math.floor(Math.random() * data.length);
+    console.log(random);
 }
 
 random(testData);
-*/
