@@ -29,11 +29,23 @@ addToList.addEventListener('click', () =>{
     input.value = '';
 })
 
+submitRandom.addEventListener('click', () =>{
+    let div = document.querySelector('div.answer');
+    let p = document.createElement('p');
 
+    let randomAnswer = randomList[Math.floor(Math.random() * randomList.length)];
+    console.log(randomAnswer);
+
+    p.textContent = randomAnswer;
+    div.appendChild(p);
+})
+
+/*
 let testData = ['Dave', 'Senan', 'Sorcha', 'Ste'];
-function random(data){
+function randomPersonFromList(data){
     let random = data[Math.floor(Math.random() * data.length)];
     console.log(random);
 }
 
-random(testData);
+randomPersonFromList(testData);
+*/
