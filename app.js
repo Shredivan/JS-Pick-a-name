@@ -13,6 +13,10 @@ addToList.addEventListener('click', () =>{
     let ul = document.querySelector('ul');
     let li = document.createElement('li');
 
+    if(input.value.length == 0){
+        console.log('error, you need to write a name');
+    }
+    else{
     // Take input values and add as a list item to DOM
     // TODO: Create conditional statement that blocks input if user submits an integer or float
     // TODO: Prevent button from taking empty value from input
@@ -28,6 +32,7 @@ addToList.addEventListener('click', () =>{
 
     // Empty the array after a value is entered
     input.value = '';
+    }
 })
 
 submitRandom.addEventListener('click', () =>{
