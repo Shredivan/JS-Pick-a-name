@@ -32,8 +32,8 @@ addToList.addEventListener('click', () =>{
 
 submitRandom.addEventListener('click', () =>{
     let div = document.querySelector('div.answer');
-    let h4 = document.createElement('h4');
     let p = document.createElement('p');
+    let h4 = document.createElement('h4');
 
     let randomAnswer = randomList[Math.floor(Math.random() * randomList.length)];
     console.log(randomAnswer);
