@@ -57,3 +57,12 @@ ul{
 li{
     margin-bottom: 8px;
 }
+.answer{
+    margin: 20px 0;
+}
+h4{
+    display: inline-block;
+}
+p{
+    display: inline-block;
+}

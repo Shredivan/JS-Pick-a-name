@@ -14,7 +14,8 @@ addToList.addEventListener('click', () =>{
     let li = document.createElement('li');
 
     // Take input values and add as a list item to DOM
-    //TODO: Create conditional statement that blocks input if user submits an integer or float
+    // TODO: Create conditional statement that blocks input if user submits an integer or float
+    // TODO: Prevent button from taking empty values from input
     li.textContent = input.value;
     ul.appendChild(li);
 
@@ -31,6 +32,7 @@ addToList.addEventListener('click', () =>{
 
 submitRandom.addEventListener('click', () =>{
     let div = document.querySelector('div.answer');
+    let h4 = document.createElement('h4');
     let p = document.createElement('p');
 
     let randomAnswer = randomList[Math.floor(Math.random() * randomList.length)];
@@ -38,6 +40,8 @@ submitRandom.addEventListener('click', () =>{
 
     // Take input values and add as a list item to DOM
     // TODO: Stop user from fire the function more than onces
-    p.textContent = randomAnswer;
+    h4.textContent = randomAnswer;
+    p.textContent = 'Your Answer is:';
     div.appendChild(p);
+    div.appendChild(h4);
 })
