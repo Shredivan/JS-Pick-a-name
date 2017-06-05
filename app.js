@@ -42,6 +42,8 @@ submitRandom.addEventListener('click', () =>{
     let p = document.createElement('p');
     let h4 = document.createElement('h4');
 
+    // Check for values in list
+    // If empty, throw error
     if(ul.textContent.length == 0){
         console.log('error, you need to write a name');
     }
