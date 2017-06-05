@@ -19,20 +19,20 @@ addToList.addEventListener('click', () =>{
         console.log('error, you need to write a name');
     }
     else{
-    // Take input values and add as a list item to DOM
-    // TODO: Create conditional statement that blocks input if user submits an integer or float
-    li.textContent = input.value;
-    ul.appendChild(li);
+        // Take input values and add as a list item to DOM
+        // TODO: Create conditional statement that blocks input if user submits an integer or float
+        li.textContent = input.value;
+        ul.appendChild(li);
 
-    // Append input value to empty array for random function
-    //TODO: Create a function for this
-    randomList.push(input.value);
+        // Append input value to empty array for random function
+        //TODO: Create a function for this
+        randomList.push(input.value);
 
-    // Check values are being added to the array
-    console.log(randomList);
+        // Check values are being added to the array
+        console.log(randomList);
 
-    // Empty the array after a value is entered
-    input.value = '';
+        // Empty the array after a value is entered
+        input.value = '';
     }
 })
 
@@ -47,14 +47,14 @@ submitRandom.addEventListener('click', () =>{
         console.log('error, you need to write a name');
     }
     else{
-    let randomAnswer = randomList[Math.floor(Math.random() * randomList.length)];
-    console.log(randomAnswer);
+        let randomAnswer = randomList[Math.floor(Math.random() * randomList.length)];
+        console.log(randomAnswer);
 
-    // Take input values and add as a list item to DOM
-    // TODO: Stop user from firing the function more than once
-    h4.textContent = randomAnswer;
-    p.textContent = 'Your Answer is:';
-    div.appendChild(p);
-    div.appendChild(h4);
+        // Take input values and add as a list item to DOM
+        // TODO: Stop user from firing the function more than once
+        h4.textContent = randomAnswer;
+        p.textContent = 'Your Answer is:';
+        div.appendChild(p);
+        div.appendChild(h4);
     }
 })
