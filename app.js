@@ -2,6 +2,9 @@ let input = document.querySelector('input');
 let addToList = document.querySelector('button.addToList');
 let submitRandom = document.querySelector('button.submit');
 let ul = document.querySelector('ul');
+let deleteButton = document.createElement('button');
+    deleteButton.className += 'deleteButton';
+    deleteButton.textContent = 'x';
 
 /*
     Empty array to hold values of input field
@@ -12,8 +15,6 @@ let randomList = [];
 //Function to take data from input form and add to list
 addToList.addEventListener('click', () =>{
     let li = document.createElement('li');
-    let deleteButton = document.createElement('button');
-    deleteButton.className += 'deleteButton';
 
     // Check if form is empty before submitting value
     // Throw error if empty
@@ -24,7 +25,6 @@ addToList.addEventListener('click', () =>{
         // Take input values and add as a list item to DOM
         // TODO: Create conditional statement that blocks input if user submits an integer or float
         li.textContent = input.value;
-        deleteButton.textContent = 'x';
         ul.appendChild(li);
         li.appendChild(deleteButton);
 
