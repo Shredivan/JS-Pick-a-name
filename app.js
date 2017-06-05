@@ -5,6 +5,7 @@ let ul = document.querySelector('ul');
 let deleteButton = document.createElement('button');
     deleteButton.className += 'deleteButton';
     deleteButton.textContent = 'x';
+let li = document.createElement('li');
 
 /*
     Empty array to hold values of input field
@@ -14,7 +15,7 @@ let randomList = [];
 
 //Function to take data from input form and add to list
 addToList.addEventListener('click', () =>{
-    let li = document.createElement('li');
+
 
     // Check if form is empty before submitting value
     // Throw error if empty
@@ -65,4 +66,9 @@ submitRandom.addEventListener('click', () =>{
             submitRandom.disabled = true;
         }
     }
+})
+
+// Delete button functionality
+deleteButton.addEventListener('click', () => {
+    ul.removeChild(li);
 })
