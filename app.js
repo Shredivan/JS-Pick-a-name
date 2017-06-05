@@ -56,5 +56,10 @@ submitRandom.addEventListener('click', () =>{
         p.textContent = 'Your Answer is:';
         div.appendChild(p);
         div.appendChild(h4);
+
+        // Disable button is the random function has already been fired
+        if(h4.textContent == randomAnswer){
+            submitRandom.disabled = true;
+        }
     }
 })
