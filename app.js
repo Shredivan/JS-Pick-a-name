@@ -21,7 +21,6 @@ addToList.addEventListener('click', () =>{
     else{
     // Take input values and add as a list item to DOM
     // TODO: Create conditional statement that blocks input if user submits an integer or float
-    // TODO: Prevent button from taking empty value from input
     li.textContent = input.value;
     ul.appendChild(li);
 
