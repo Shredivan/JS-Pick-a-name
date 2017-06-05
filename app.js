@@ -13,6 +13,8 @@ addToList.addEventListener('click', () =>{
     let ul = document.querySelector('ul');
     let li = document.createElement('li');
 
+    // Check if form is empty before submitting value
+    // Throw error if empty
     if(input.value.length == 0){
         console.log('error, you need to write a name');
     }
