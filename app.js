@@ -6,7 +6,6 @@ let submitRandom = document.querySelector('button.submit');
     Empty array to hold values of input field
     Keep as block level element as will be accessed by more than one function
 */
-
 let randomList = [];
 
 //Function to take data from input form and add to list
@@ -33,7 +32,7 @@ addToList.addEventListener('click', () =>{
 
 let testData = ['Dave', 'Senan', 'Sorcha', 'Ste'];
 function random(data){
-    let random = Math.floor(Math.random() * data.length);
+    let random = data[Math.floor(Math.random() * data.length)];
     console.log(random);
 }
 
