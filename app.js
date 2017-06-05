@@ -39,13 +39,3 @@ submitRandom.addEventListener('click', () =>{
     p.textContent = randomAnswer;
     div.appendChild(p);
 })
-
-/*
-let testData = ['Dave', 'Senan', 'Sorcha', 'Ste'];
-function randomPersonFromList(data){
-    let random = data[Math.floor(Math.random() * data.length)];
-    console.log(random);
-}
-
-randomPersonFromList(testData);
-*/
