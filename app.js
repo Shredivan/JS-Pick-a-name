@@ -12,6 +12,8 @@ let randomList = [];
 //Function to take data from input form and add to list
 addToList.addEventListener('click', () =>{
     let li = document.createElement('li');
+    let deleteButton = document.createElement('button');
+    deleteButton.className += 'deleteButton';
 
     // Check if form is empty before submitting value
     // Throw error if empty
@@ -22,10 +24,11 @@ addToList.addEventListener('click', () =>{
         // Take input values and add as a list item to DOM
         // TODO: Create conditional statement that blocks input if user submits an integer or float
         li.textContent = input.value;
+        deleteButton.textContent = 'x';
         ul.appendChild(li);
+        li.appendChild(deleteButton);
 
         // Append input value to empty array for random function
-        //TODO: Create a function for this
         randomList.push(input.value);
 
         // Check values are being added to the array

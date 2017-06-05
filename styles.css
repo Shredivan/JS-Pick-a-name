@@ -40,6 +40,13 @@ button:hover{
 .addToList:hover{
     background-color: #f9f9f9;
 }
+.deleteButton{
+    margin-left: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 100%;
+    height: 34px;
+}
 .submit{
     background-color: black;
     color: white;
