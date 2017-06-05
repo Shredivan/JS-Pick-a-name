@@ -1,6 +1,7 @@
 let input = document.querySelector('input');
 let addToList = document.querySelector('button.addToList');
 let submitRandom = document.querySelector('button.submit');
+let ul = document.querySelector('ul');
 
 /*
     Empty array to hold values of input field
@@ -10,7 +11,6 @@ let randomList = [];
 
 //Function to take data from input form and add to list
 addToList.addEventListener('click', () =>{
-    let ul = document.querySelector('ul');
     let li = document.createElement('li');
 
     // Check if form is empty before submitting value
@@ -42,6 +42,10 @@ submitRandom.addEventListener('click', () =>{
     let p = document.createElement('p');
     let h4 = document.createElement('h4');
 
+    if(ul.textContent.length == 0){
+        console.log('error, you need to write a name');
+    }
+    else{
     let randomAnswer = randomList[Math.floor(Math.random() * randomList.length)];
     console.log(randomAnswer);
 
@@ -51,4 +55,5 @@ submitRandom.addEventListener('click', () =>{
     p.textContent = 'Your Answer is:';
     div.appendChild(p);
     div.appendChild(h4);
+    }
 })
