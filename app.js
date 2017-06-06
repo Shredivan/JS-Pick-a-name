@@ -7,9 +7,12 @@ let ul = document.querySelector('ul');
 let deleteButton = document.createElement('button');
     deleteButton.className += 'deleteButton';
     deleteButton.textContent = 'x';
+
+// TODO: Create function to loop through all the list items and add delete button using target event
+
 /*
-    Empty array to hold values of input field
-    Keep as block level element as will be accessed by more than one function
+Empty array to hold values of input field
+Keep as block level element as will be accessed by more than one function
 */
 let randomList = [];
 
@@ -69,7 +72,3 @@ submitRandom.addEventListener('click', () =>{
     }
 })
 
-// Delete button functionality
-//deleteButton.addEventListener('click', () => {
-//    ul.removeChild(li);
-//})
