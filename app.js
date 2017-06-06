@@ -7,8 +7,6 @@ let ul = document.querySelector('ul');
 let deleteButton = document.createElement('button');
     deleteButton.className += 'deleteButton';
     deleteButton.textContent = 'x';
-let li = document.createElement('li');
-
 /*
     Empty array to hold values of input field
     Keep as block level element as will be accessed by more than one function
@@ -27,9 +25,10 @@ addToList.addEventListener('click', () =>{
     else{
         // Take input values and add as a list item to DOM
         // TODO: Create conditional statement that blocks input if user submits an integer or float
+        let li = document.createElement('li');
         li.textContent = input.value;
         ul.appendChild(li);
-        li.appendChild(deleteButton);
+        //li.appendChild(deleteButton);
 
         // Append input value to empty array for random function
         randomList.push(input.value);
@@ -71,6 +70,6 @@ submitRandom.addEventListener('click', () =>{
 })
 
 // Delete button functionality
-deleteButton.addEventListener('click', () => {
-    ul.removeChild(li);
-})
+//deleteButton.addEventListener('click', () => {
+//    ul.removeChild(li);
+//})
