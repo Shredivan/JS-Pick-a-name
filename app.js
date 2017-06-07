@@ -1,5 +1,3 @@
-// Code written by David Sheridan in june 2017
-
 let input = document.querySelector('input');
 let addToList = document.querySelector('button.addToList');
 let submitRandom = document.querySelector('button.submit');
