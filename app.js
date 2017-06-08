@@ -8,6 +8,7 @@ let deleteButton = document.createElement('button');
 
 // TODO: Create function to loop through all the list items and add delete button using target event
 // TODO: Stop user from adding to list once random function has been fired
+// TODO: Stop user form adding more than one name at a time
 
 /*
 Empty array to hold values of input field
