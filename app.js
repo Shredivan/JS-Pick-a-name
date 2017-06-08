@@ -7,6 +7,7 @@ let deleteButton = document.createElement('button');
     deleteButton.textContent = 'x';
 
 // TODO: Create function to loop through all the list items and add delete button using target event
+// TODO: Stop user from adding to list once random function has been fired
 
 /*
 Empty array to hold values of input field
