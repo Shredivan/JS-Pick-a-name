@@ -2,13 +2,13 @@ let input = document.querySelector('input');
 let addToList = document.querySelector('button.addToList');
 let submitRandom = document.querySelector('button.submit');
 let ul = document.querySelector('ul');
-let deleteButton = document.createElement('button');
-    deleteButton.className += 'deleteButton';
-    deleteButton.textContent = 'x';
+// let deleteButton = document.createElement('button');
+//     deleteButton.className += 'deleteButton';
+//     deleteButton.textContent = 'x';
 
 // TODO: Create function to loop through all the list items and add delete button using target event
 // TODO: Stop user from adding to list once random function has been fired
-// TODO: Stop user form adding more than one name at a time
+// TODO: Stop user from adding more than one name at a time
 
 /*
 Empty array to hold values of input field
@@ -18,7 +18,6 @@ let randomList = [];
 
 //Function to take data from input form and add to list
 addToList.addEventListener('click', () =>{
-
 
     // Check if form is empty before submitting value
     // Throw error if empty
@@ -71,4 +70,3 @@ submitRandom.addEventListener('click', () =>{
         }
     }
 })
-
