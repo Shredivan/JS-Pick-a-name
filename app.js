@@ -22,6 +22,8 @@ addToList.addEventListener('click', () =>{
     // Throw error if empty
     if(input.value.length == 0){
         console.log('error, you need to write a name');
+    }else if(parseInt(input.value)){
+        console.log('You cant add a number');
     }
     else{
         // Take input values and add as a list item to DOM
