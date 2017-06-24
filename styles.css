@@ -64,6 +64,9 @@ button:hover{
     box-shadow: 0px 1px 6px #a9a9a9;
     transition: .13s;
 }
+.submit:target{
+  background-color: red;
+}
 ul{
     margin-top: 16px;
     list-style-type: square;

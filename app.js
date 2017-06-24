@@ -59,9 +59,8 @@ submitRandom.addEventListener('click', () =>{
         console.log(randomAnswer);
 
         // Take input values and add as a list item to DOM
-        // TODO: Stop user from firing the function more than once
         h4.textContent = randomAnswer;
-        p.textContent = 'Your Answer is:';
+        p.textContent = 'Your Answer is: ';
         div.appendChild(p);
         div.appendChild(h4);
 
