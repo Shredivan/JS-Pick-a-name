@@ -7,7 +7,6 @@ let ul = document.querySelector('ul');
 //     deleteButton.textContent = 'x';
 
 // TODO: Create function to loop through all the list items and add delete button using target event
-// TODO: Stop user from adding to list once random function has been fired
 // TODO: Stop user from adding more than one name at a time
 
 /*
@@ -67,6 +66,7 @@ submitRandom.addEventListener('click', () =>{
         // Disable button is the random function has already been fired
         if(h4.textContent == randomAnswer){
             submitRandom.disabled = true;
+            addToList.disabled = true;
         }
     }
 })
