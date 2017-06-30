@@ -23,6 +23,13 @@ input{
     padding-left: 8px;
     font-size: 1em;
 }
+.errorArea{
+  display: block;
+  color: red;
+}
+.formError{
+  border: 2px solid red;
+}
 button{
     height: 32px;
     padding-right: 12px;
