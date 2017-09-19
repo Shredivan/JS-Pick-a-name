@@ -6,10 +6,7 @@ let ul = document.querySelector('ul');
 // TODO: Create function to loop through all the list items and add delete button using target event
 // TODO: Stop user from adding more than one name at a time
 
-/*
-* Empty array to hold values of input field
-* Keep as block level element as will be accessed by more than one function
-*/
+// Store list in memory
 let randomList = [];
 
 //Function to take data from input form and add to list
@@ -43,14 +40,9 @@ addToList.addEventListener('click', () =>{
     else{
         // Take input values and add as a list item to DOM
         let li = document.createElement('li');
-        // add delete button for each li element
-        // let deleteButton = document.createElement('button');
-        //      deleteButton.className += 'deleteButton';
-        //      deleteButton.textContent = 'x';
-
+       
         li.textContent = input.value;
         ul.appendChild(li);
-        //li.appendChild(deleteButton);
 
         // Append input value to empty array for random function
         randomList.push(input.value);
