@@ -17,11 +17,7 @@ addToList.addEventListener('click', () =>{
     if(input.value.length == 0){
         console.log('error, you need to write a name');
     }else if(parseInt(input.value)){
-
-        // TODO: Add While loop to remove it once user uses form after error
-        // TODO: Don't allow more than one error to appear at a time
-        // TODO: If error handling becomes to big, split errors into seperate files as objects
-
+        
         // Create P element with error message
         let numberError = document.createElement('p');
             numberError.textContent += "You cant add numbers to the list";
