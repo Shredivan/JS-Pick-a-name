@@ -26,9 +26,6 @@ addToList.addEventListener('click', () =>{
         let errorArea = document.querySelector('span.errorArea');
             errorArea.appendChild(numberError);
 
-        // Log area
-        console.log('You cant add a number');
-
         // Add error styling to form field
         input.value = '';
         input.className = 'formError'
@@ -42,10 +39,7 @@ addToList.addEventListener('click', () =>{
 
         // Append input value to empty array for random function
         randomList.push(input.value);
-
-        // Check values are being added to the array
-        console.log(randomList);
-
+        
         // Empty the array after a value is entered
         input.value = '';
     }
@@ -68,12 +62,9 @@ submitRandom.addEventListener('click', () =>{
 
         input.value = '';
         input.className = 'formError'
-
-        console.log('error, you need to write a name');
     }
     else{
         let randomAnswer = randomList[Math.floor(Math.random() * randomList.length)];
-        console.log(randomAnswer);
 
         // Take input values and add as a list item to DOM
         h4.textContent = randomAnswer;
